@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="homeStyle.css">
+    <script src="JQuery.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="howtoplay.css">
+</head>
+<body>
+    <!-- navigation -->
+    <div class="navigation">
+        <div id="navigation-left">
+            <a href="Home.html">
+                <div id="nav-logo"></div>
+            </a>
+            <h4>DOTO 2</h4>
+            <div id="menu-dropdown-header">
+                <div class="menu-dropdown">
+                    GAME
+                </div>
+                <div class="menu-dropdown-box">
+                    <div class="menu-dropdown-item">
+                        <a href="heroes.html">Heroes</a> 
+                    </div>
+                    <div class="menu-dropdown-item">
+                        <p><a href="How to Play.html">Game Mechanics</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="merch">
+                <a id="merch-text" href="Merch.html">MERCH</a>               
+            </div>
+        </div>
+        <div id="navigation-right">
+            <div id="login-button">
+                <a id="login-button-hover" href="Registration.html">LOGIN</a>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div id="header">
+        <div id="mini-title">
+            5 vs 5 moba game
+        </div>
+        <div id="header-title">
+            <h4>JOIN NOW</h4>
+        </div>
+        <div id="header-login">
+            Play Now
+        </div>
+    </div>
+    <!-- footage -->
+    <div id="content">
+        <div id="mid-content">
+            <div id="content-news">
+                <h5>Experience new MOBA games <br></h5>
+                <h5>5 versus 5 battle heroes <br></h5>
+                <h5>fight to your limit  <br></h5>
+                <h5>take foes as competitive or classic mode<br></h5>
+            </div> <br> <br>
+            <div id="content-title">
+                Game Footage
+            </div><br>
+            <div id="image-slider">
+                <div id="image-slider-container">
+                        <img src="assets/slider-1.jpg" alt="" class="slide">
+                        <img src="assets/slider-2.jpg" alt="" class="slide">
+                        <img src="assets/slider-3.jpg" alt="" class="slide">
+                </div>
+            </div>
+            <div id="button">
+                <div id="prev-but"> prev </div>
+                <div id="next-but"> next </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- penutup -->
+
+    <div id="knee">
+        <div id="knee-word">
+            <h2>JOIN</h2>
+            <h2>US</h2>
+            <h2>NOW</h2>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+        <div id="footer-title">
+            Follow us On:
+        </div>
+        <div id="footer-logo">
+            <a href="https://www.facebook.com/">
+                <img src="assets/facebook.webp" alt="" class="bottom-logo">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="assets/instagram.webp" alt="" class="bottom-logo">
+            </a>
+            <a href="https://www.twitter.com/">
+                <img src="assets/twiter.png" alt="" class="bottom-logo">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="assets/youtube-logo.png" alt="" class="bottom-logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script>
+        let next = $('#next-but')
+        let prev = $('#prev-but')
+        let container = $('#image-slider-container')
+
+        let x = 0   
+            container.css({
+            left: x+"%"
+        })
+
+        next.on('click',function(){
+            x = (x<200) ? (x+100) : 0
+            container.css({
+                left: -x+"%"
+            })
+        })
+
+        prev.on('click',function(){
+            x = (x>0) ? (x-100) : 200
+            container.css({
+                left: -x+'%'
+            })
+        })
+
+
+    </script>
+</body>
+</html>

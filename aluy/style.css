@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.guide {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./img/bg.webp');
+  background-position: center;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+.wrapper {
+  text-align: center;
+  padding: 2rem;
+}
+
+.wrapper h1 {
+  font-family: 'Rock Salt', sans-serif;
+  font-size: 48px;
+  color: #fff;
+}
+
+.wrapper h1 .red {
+  color: #fc0a0a;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 70px;
+}
+
+.card {
+  width: 280px;
+  height: 350px;
+  background: #993737;
+  color: #fff;
+  font-family: 'Rock Salt', sans-serif;
+  padding: 8px 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 32px;
+  border-bottom: 2px solid #fff;
+}
+
+.card p {
+  margin-top: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.modal {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  background: #fff;
+  padding: 3rem 2rem;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: rgba(88, 88, 88, 0.2);
+  top: 0;
+  left: 0;
+  display: none;
+}
